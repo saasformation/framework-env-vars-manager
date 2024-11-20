@@ -1,0 +1,20 @@
+{
+    "name": "saasformation/framework-env-vars-manager",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SaaSFormation",
+            "email": "info@saasformation.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SaaSFormation\\Framework\\EnvVarsManager\\": "src"
+        }
+    },
+    "require": {
+        "php": "^8.3",
+        "symfony/yaml": "^7"
+    }
+}
