@@ -10,7 +10,7 @@ class EnvVarsManager implements EnvVarsManagerInterface
     /** @var array<string, string|bool|int> */
     private array $envVars;
 
-    public function __construct(private string $envVarsConfigFilePath)
+    public function __construct(private readonly string $envVarsConfigFilePath)
     {
         /** @var array<"vars", array<string, string>> $parsedYaml */
         $parsedYaml = Yaml::parseFile($this->envVarsConfigFilePath);
